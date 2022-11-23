@@ -1,0 +1,115 @@
+.section-intro {
+  height:      100vh;
+  display:     flex;
+  align-items: end;
+  .back {
+    height:     100%;
+    width:      100%;
+    object-fit: cover;
+    position:   absolute;
+    top:        0;
+    left:       0;
+    z-index:    -1;
+  }
+  .container {
+    max-width: 915px;
+  }
+  .wrapper {
+    height:          50vh;
+    margin-bottom:   8%;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-between;
+  }
+  h1 {
+    max-width:   680px;
+    text-align:  center;
+    font-family: 'Evensong', sans-serif;
+    font-weight: 400;
+    font-size:   64px;
+    margin:      0 auto;
+  }
+  .check {
+    width:           100%;
+    height:          84px;
+    background:      white;
+    border-radius:   56px;
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    padding:         9px 9px 9px 39px;
+    div {
+      display: flex;
+    }
+    h3, input, select {
+      font-size: 16px;
+      color:     #37393B;
+    }
+    h3 {
+      margin-right: 5px;
+      opacity:      .5;
+    }
+    input, select {
+      width:         180px;
+      border:        0;
+      font-weight:   350;
+      border-bottom: 1px solid rgba(55, 57, 59, 0.2);
+      transition: .3s linear;
+    }
+    input:hover, select:hover{
+      border-bottom: 1px solid rgba(green, 1);
+    }
+    input[type='date']::-webkit-calendar-picker-indicator {
+      -webkit-appearance:    none;
+      -moz-appearance:       none;
+      background-image:      url('../img/icons/icon-select-open.svg');
+      background-repeat:     no-repeat;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      height:                6px;
+    }
+    a {
+      width:           233px;
+      padding:         24px 0;
+      border-radius:   72px;
+      text-align:      center;
+      transition:      .3s linear;
+      white-space:     nowrap;
+      margin-left:     5px;
+      display:         flex;
+      justify-content: center;
+      div {
+        align-items: center;
+        margin:      0 auto;
+      }
+      p {
+        padding-right:  12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .section-intro {
+    h1 {
+      font-size: 40px;
+    }
+    .check {
+      max-width: 335px;
+      height:    54px;
+      padding:   0;
+      margin:    0 auto 41px;
+      .input, .select {
+        display: none !important;
+      }
+      a {
+        height: 100%;
+        width:  100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
