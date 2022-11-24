@@ -1,0 +1,139 @@
+.header {
+  width:      100%;
+  background: transparent;
+  position:   fixed;
+  top:        0;
+  left:       0;
+  z-index:    1000;
+  .container {
+    padding: 0 40px;
+  }
+  li, a, img {
+    transition: .3s linear;
+  }
+  li, a {
+    font-size:      14px;
+    text-transform: uppercase;
+  }
+  img:hover, li:hover {
+    opacity: .5;
+    cursor:  pointer;
+  }
+  .upper-block {
+    height:          60px;
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    margin-top:      19px;
+    img:nth-child(1) {
+      margin-right: 90px;
+    }
+    a {
+      padding:       14px 38px;
+      border-radius: 48px;
+    }
+  }
+  .nav-block {
+    width:     722px;
+    position:  absolute;
+    top:       160%;
+    left:      50%;
+    transform: translateX(-50%);
+  }
+  ul {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    border-bottom:   1px solid rgba(255, 255, 255, .2);
+    li {
+      padding: 13px 0;
+    }
+    li:first-child {
+      display: none;
+    }
+  }
+}
+
+.header-scroll {
+  background-color: black;
+  .upper-block {
+    margin: 0;
+    img:nth-child(2) {
+      display: none !important;
+    }
+  }
+  .nav-block {
+    width: 66%;
+    top:   22px;
+  }
+  ul {
+    top:    4px;
+    border: 0;
+    li {
+      padding: 0;
+    }
+    li:first-child {
+      display: block !important;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .header {
+    .container {
+      padding: 0 26px;
+    }
+    background-color: #CA4326;
+    .upper-block {
+      margin: 0;
+      img:nth-child(1) {
+        margin-right: 25px;
+      }
+      a {
+        width:   70px;
+        padding: 5px 5px 5px 20px;
+      }
+      a:hover {
+        background-color: #CA4326;
+      }
+    }
+    .nav-block {
+      display:          block !important;
+      top:              60px;
+      background-color: black;
+      width:            100vw;
+      overflow:         scroll;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    ul {
+      height:          54px;
+      justify-content: start;
+      li {
+        white-space: nowrap;
+        border:      0;
+      }
+      li:hover {
+        opacity: 1;
+      }
+      a {
+        margin:         20px 32px 0;
+        padding-bottom: 17px;
+      }
+      a:active {
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .header {
+    .upper-block {
+      img:nth-child(2) {
+        width: 42%;
+      }
+    }
+  }
+}
