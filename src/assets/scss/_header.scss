@@ -20,7 +20,7 @@
     cursor:  pointer;
   }
   .upper-block {
-    height:          60px;
+    min-height:      60px;
     display:         flex;
     justify-content: space-between;
     align-items:     center;
@@ -31,6 +31,8 @@
     a {
       padding:       14px 38px;
       border-radius: 48px;
+      max-width:       170px;
+      text-align: center;
     }
   }
   .nav-block {
