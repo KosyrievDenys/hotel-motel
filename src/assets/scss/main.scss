@@ -1,6 +1,8 @@
-@import "fonts";
-@import "header";
-@import "footer";
-@import "global";
-@import "section-intro";
-@import "page-services-and-amenities";
+@import "common/fonts";
+@import "common/header";
+@import "common/footer";
+@import "common/global";
+@import "common/section-intro";
+@import "pages/page-services-and-amenities";
+@import "common/welcome";
+
