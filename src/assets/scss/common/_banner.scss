@@ -1,4 +1,4 @@
-.section-intro {
+.banner {
   * {
     color: #fff;
   }
@@ -18,11 +18,11 @@
     min-height:      100vh;
     display:         flex;
     flex-direction:  column;
-    justify-content: space-between;
+    justify-content: center;
   }
   h1 {
     max-width:   680px;
-    margin:      400px auto 20px;
+    margin:      250px auto 20px;
     text-align:  center;
     font-family: 'Evensong', sans-serif;
     font-weight: 400;
@@ -32,13 +32,12 @@
 
 
 @media(max-width: 1024px) {
-  .home {
-    .section-intro {
-      h1 {
-        font-size: 40px;
-      }
+  .banner {
+    h1 {
+      font-size: 40px;
     }
   }
 }
+
 
 
