@@ -11,7 +11,7 @@
 
 html,
 body {
-  width:  100%;
+  width: 100%;
 }
 
 section {
@@ -23,8 +23,8 @@ a {
   cursor:          pointer;
 }
 
-a, input, select, button{
-  transition:    .3s linear;
+a, input, select, button {
+  transition: .3s linear;
 }
 
 body {
@@ -48,7 +48,7 @@ main {
 .container {
   max-width: 1440px;
   width:     100%;
-  padding:   0 40px;
+  padding:   0 20px;
   margin:    0 auto;
   position:  relative;
 }
@@ -70,6 +70,11 @@ li {
 
 .btn-scarlet {
   background-color: #CA4326;
+  border:           0;
+  text-align:       center;
+  justify-content:  center;
+  align-items:      center;
+  cursor:           pointer;
 }
 
 .btn-scarlet:hover {
@@ -87,4 +92,14 @@ li {
     font-size: 16px;
     color:     #37393b;
   }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  -webkit-appearance:    none;
+  -moz-appearance:       none;
+  background-image:      url('../img/icons/icon-select-open.svg');
+  background-repeat:     no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  height:                6px;
 }
