@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  const windowWidth = window.innerWidth;
-  const introBtnSpan = document.getElementsByClassName('intro-btn-p');
-  if (windowWidth < 1024) {
-    introBtnSpan.innerHTML = 'Book a room';
-  }
+  new Swiper(".swiper-restaurants", {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    }
+  })
 
 });

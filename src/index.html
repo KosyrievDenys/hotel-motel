@@ -20,8 +20,8 @@
 <header class='header'>
   <div class='container'>
     <div class='upper-block'>
-      <img src='./assets/img/icons/search.png' alt=''>
-      <img src='./assets/img/logo.png' alt=''>
+      <img class='img-search' src='./assets/img/icons/search.png' alt=''>
+      <a href='./index.html' class='logo'><img src='./assets/img/logo.png' alt=''></a>
       <a href='#' class='header-btn-book btn-scarlet'>Book</a>
     </div>
     <div class='nav-block'>
@@ -36,7 +36,7 @@
     </div>
   </div>
 </header>
-<main class='home-page'>
+<main class='home'>
   <section class='section-intro'>
     <img class='back' src='./assets/img/accessible-rooms-1.jpg' alt='' />
     <div class='container'>
@@ -74,15 +74,15 @@
           <p class='adress'>216-225 South Terrace, Adelaide SA 5000</p>
           <div>
             <img src='./assets/img/icons/phone.svg' alt=''>
-            <p>+61 8 8368 9900</p>
+            <a href='tel:+61 8 8368 9900'>+61 8 8368 9900</a>
           </div>
           <div>
             <img src='./assets/img/icons/mail.svg' alt=''>
-            <p>Email us</p>
+            <a href='mailto:'>Email us</a>
           </div>
           <div>
             <img src='./assets/img/icons/loc.svg' alt=''>
-            <p>Parking & Directions</p>
+            <a href='#'>Parking & Directions</a>
           </div>
         </div>
         <div class='facilities'>
@@ -130,11 +130,56 @@
       </div>
     </div>
   </section>
+  <section class='section-restaurants-and-bars'>
+    <div class='container'>
+      <div class='swiper swiper-restaurants'>
+        <h2>Restaurants & Bars</h2>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'>
+            <img src='./assets/img/home-restaurants-1.png' alt=''>
+            <div>
+              <h3>HotelMOTEL In-Room Dining</h3>
+              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                deliciousness...</p>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <img src='./assets/img/home-restaurants-2.png' alt=''>
+            <div>
+              <h3>Terrace Bar & Kitchen Breakfast</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
+                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <img src='./assets/img/home-restaurants-1.png' alt=''>
+            <div>
+              <h3>HotelMOTEL In-Room Dining</h3>
+              <p>Enter room, check menu. It’s that simple to sate your appetite, with a fantastic selection of
+                deliciousness...</p>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <img src='./assets/img/home-restaurants-2.png' alt=''>
+            <div>
+              <h3>Terrace Bar & Kitchen Breakfast</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam corporis, dolorem ea
+                explicabo facilis fugiat laboriosam modi omnis veritatis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-btn swiper-button-prev"></div>
+        <div class="swiper-btn swiper-button-next"></div>
+        <div class='swiper-scrollbar'></div>
+      </div>
+    </div>
+  </section>
 
 </main>
 <footer class='footer'>
 </footer>
 <script src="./assets/libs/swiper/swiper.js"></script>
 <script src='./assets/js/main.js'></script>
+<script src='./assets/js/home.js'></script>
 </body>
 </html>
