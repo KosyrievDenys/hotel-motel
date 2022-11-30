@@ -38,7 +38,9 @@
 </header>
 <main class='home'>
   <section class='banner'>
-    <img class='back' src='./assets/img/accessible-rooms-1.jpg' alt='' />
+    <div class='back'>
+      <img src='./assets/img/accessible-rooms-1.jpg' alt='' />
+    </div>
     <div class='container'>
       <div class='wrapper'>
         <h1>A modern remake of a classic</h1>
@@ -55,7 +57,7 @@
           </label>
           <button class='intro-btn btn-scarlet'>
             <span class='intro-btn-p'>Check availability</span>
-            <img class='img-right-arrow' src='assets/img/icons/right-arrow-black.svg' alt=''>
+            <img class='img-right-arrow' src='assets/img/icons/right-arrow-white.svg' alt=''>
           </button>
         </form>
       </div>
@@ -129,6 +131,66 @@
       </div>
     </div>
   </section>
+  <section class='rooms'>
+    <div class='container'>
+      <h2>Our Rooms at HotelMOTEL</h2>
+    </div>
+    <div class='swiper swiper-rooms'>
+      <div class='swiper-wrapper'>
+        <div class='swiper-slide'>
+          <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+          <div class='link'>
+            <a>
+              <h3>Double Double Room</h3>
+              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+            </a>
+            <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+              with
+              a coffee pod machine...</p>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <img class='img-room' src='./assets/img/home-events.png' alt=''>
+          <div class='link'>
+            <a>
+              <h3>Double Double Room</h3>
+              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+            </a>
+            <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+              with
+              a coffee pod machine...</p>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+          <div class='link'>
+            <a>
+              <h3>Double Double Room</h3>
+              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+            </a>
+            <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+              with
+              a coffee pod machine...</p>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
+          <div class='link'>
+            <a>
+              <h3>Double Double Room</h3>
+              <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+            </a>
+            <p>A quintessential experience, with easy-going vibes. The HM Double Double Room offers two double beds,
+              with
+              a coffee pod machine...</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-btn swiper-button-prev"></div>
+      <div class="swiper-btn swiper-button-next"></div>
+    </div>
+  </section>
   <section class='restaurants-and-bars'>
     <div class='swiper swiper-restaurants'>
       <div class='container'>
@@ -176,23 +238,29 @@
   <section class='events'>
     <div class='container'>
       <img class='back' src='./assets/img/home-events.png' alt=''>
-      <div class='content'>
-        <h2>Host an Event</h2>
-        <p>South Australia’s most impressive event venues are at your doorstep. With stunning spaces across the
-          award-winning Adelaide Oval Functions & Events and Oval Hotel, we host gatherings of all sizes and styles.</p>
-        <img class='img' src='./assets/img/home-events.png' alt=''>
-        <a href='#'>
-          <span>Private Dining</span>
-          <img class='img-right-arrow' src='./assets/img/icons/right-arrow-black.svg' alt=''>
-        </a>
-        <a href='#'>
-          <span>Private Dining</span>
-          <img class='img-right-arrow' src='./assets/img/icons/right-arrow-black.svg' alt=''>
-        </a>
-        <a href='#'>
-          <span>Weddings</span>
-          <img class='img-right-arrow' src='./assets/img/icons/right-arrow-black.svg' alt=''>
-        </a>
+      <div class='block-content'>
+        <div class='content'>
+          <h2>Host an Event</h2>
+          <p>South Australia’s most impressive event venues are at your doorstep. With stunning spaces across the
+            award-winning Adelaide Oval Functions & Events and Oval Hotel, we host gatherings of all sizes and styles.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi ipsam quo. Alias beatae,
+            consectetur explicabo illum laudantium nihil perspiciatis quibusdam quisquam repudiandae sunt suscipit totam
+            voluptates. Consequatur, itaque, libero.
+          </p>
+          <img class='img' src='./assets/img/home-events.png' alt=''>
+          <a href='#'>
+            <span>Private Dining</span>
+            <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+          </a>
+          <a href='#'>
+            <span>Private Dining</span>
+            <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+          </a>
+          <a href='#'>
+            <span>Weddings</span>
+            <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -207,9 +275,8 @@
               <div class='swiper-pagination'></div>
               <h3>Come Alive. Travel Longer</h3>
               <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
-                Australia with the Independent Collection by EVENT.
-              </p>
-              <a class='btn-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-black.svg' alt=''>
+                Australia with the Independent Collection by EVENT.</p>
+              <a class='btn-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
               </a>
             </div>
           </div>
@@ -220,18 +287,19 @@
               <h3>Come Alive. Travel Longer</h3>
               <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
                 Australia with the Independent Collection by EVENT.</p>
-              <div class='bth-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-black.svg' alt=''>
-              </div>
+              <a class='btn-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+              </a>
             </div>
           </div>
           <div class='swiper-slide'>
             <img class='back' src='./assets/img/home-offers-1.jpg' alt=''>
             <div class='content'>
+              <div class='swiper-pagination'></div>
               <h3>Come Alive. Travel Longer</h3>
               <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
                 Australia with the Independent Collection by EVENT.</p>
-              <div class='bth-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-black.svg' alt=''>
-              </div>
+              <a class='btn-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+              </a>
             </div>
           </div>
         </div>
@@ -247,5 +315,6 @@
 <script src="./assets/libs/swiper/swiper.js"></script>
 <script src='./assets/js/main.js'></script>
 <script src='./assets/js/home.js'></script>
+<script src='./assets/js/offers.js'></script>
 </body>
 </html>
