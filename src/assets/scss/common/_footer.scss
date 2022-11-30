@@ -1,0 +1,162 @@
+.footer {
+  display: flex;
+  * {
+    color: #fff;
+  }
+  .left {
+    padding:    40px 0 24px;
+    width:      93%;
+    background: #CA4326;
+  }
+  .right {
+    width: 7%;
+  }
+  .container {
+    max-width: 1346px;
+  }
+  .wrapper {
+    min-height:      460px;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-between;
+  }
+  .content {
+    display:         flex;
+    justify-content: space-between;
+  }
+  .logo {
+    max-width:  334px;
+    max-height: 53px;
+  }
+  .links {
+    display:         flex;
+    justify-content: space-between;
+    ul:not(ul:last-of-type) {
+      margin-right: 20px;
+    }
+    ul:nth-of-type(1) {
+      width: 28%;
+    }
+    ul:nth-of-type(2) {
+      width: 23%;
+    }
+    ul:nth-of-type(3) {
+      width: 23%;
+    }
+    ul:nth-of-type(4) {
+      width: 15%;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-weight: 400;
+    }
+    a {
+      display:     flex;
+      align-items: center;
+    }
+    a:hover {
+      opacity: .5;
+    }
+    span {
+      margin-right: 10px;
+    }
+    img {
+      width:     10px;
+      height:    11px;
+      transform: rotate(-40deg);
+    }
+  }
+  .copywriting {
+    width:           60%;
+    display:         flex;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 1024px) {
+  .footer {
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 0;
+    }
+    .links {
+      flex-wrap: wrap;
+      ul:nth-of-type(1) {
+        width:  90%;
+        margin: 0 0 40px 10%;
+      }
+      ul:nth-of-type(2) {
+        width:    100%;
+        position: absolute;
+        top:      30%;
+        left:     10%;
+      }
+      ul:nth-of-type(3) {
+        max-width:   40%;
+        margin-left: 40px;
+      }
+      ul:nth-of-type(4) {
+        width:       40%;
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    * {
+      font-size: 14px;
+    }
+    .container {
+      padding: 0 20px;
+    }
+    .content {
+      flex-wrap: wrap;
+    }
+    .logo {
+      height: 86px;
+      margin: 0 auto 56px;
+    }
+    .links {
+      justify-content: normal;
+      ul {
+        margin-bottom: 40px;
+      }
+      ul:nth-of-type(2) {
+        position:    relative;
+        top:         0;
+        left:        0;
+        margin-left: 10%;
+        li:not(li:first-of-type) {
+          display: inline-block;
+          width:   48%;
+        }
+      }
+      ul:nth-of-type(3) {
+        margin-left: 10%;
+      }
+      ul:nth-of-type(4) {
+        margin-left: 20%;
+      }
+    }
+    .copywriting {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .footer {
+    .copywriting {
+      flex-direction: column;
+      p:not(p:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

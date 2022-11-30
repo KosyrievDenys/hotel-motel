@@ -8,14 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      type: 'progressbar',
+    },
     breakpoints: {
-      320: {
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          type: 'progressbar',
-        },
-      },
       768: {
         spaceBetween: 24,
         pagination: {
