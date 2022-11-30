@@ -5,6 +5,14 @@
   top:        0;
   left:       0;
   z-index:    1000;
+  &.color-black {
+    * {
+      color: #000;
+    }
+    .logo img{
+      filter: invert(1);
+    }
+  }
   * {
     color: #fff;
   }
