@@ -3,9 +3,6 @@
   h2 {
     margin-bottom: 22px;
   }
-  .swiper-backface-hidden .swiper-slide {
-    backface-visibility: visible;
-  }
   .swiper-slide {
     .back {
       width:         85%;
@@ -46,9 +43,6 @@
         &:hover {
           opacity: .5;
         }
-      }
-      img {
-        filter: invert(1);
       }
     }
   }
