@@ -1,6 +1,9 @@
 .home {
 
   .banner {
+    .back img {
+      height: 100%;
+    }
     h1 {
       margin: 220px auto 20px;
     }
@@ -26,6 +29,7 @@
       }
       input, select {
         width:         180px;
+        min-height:    22px;
         border:        0;
         font-weight:   350;
         border-bottom: 1px solid rgba(55, 57, 59, 0.2);
@@ -95,7 +99,7 @@
     }
     .facilities {
       width: 47%;
-      .info {
+      .content {
         display:        flex;
         flex-direction: column;
         padding:        52px 65px 47px 60px;
@@ -103,7 +107,6 @@
         border:         1px solid rgba(182, 181, 179, .4);
         border-radius:  16px;
         margin-bottom:  16px;
-
       }
       h2 {
         font-size:     20px;
@@ -140,20 +143,14 @@
         border-bottom: 1px solid transparent;
       }
       select {
-        width:                 100%;
-        height:                49px;
-        font-weight:           400;
-        border:                0;
-        padding:               0 30px 0 15px;
-        border-radius:         16px;
-
-        -webkit-appearance:    none;
-        -moz-appearance:       none;
-        background-image:      url('../img/icons/down-arrow.svg');
-        background-repeat:     no-repeat;
+        width:            100%;
+        height:           49px;
+        font-weight:      400;
+        border:           0;
+        padding:          0 30px 0 15px;
+        border-radius:    16px;
+        background-color: rgba(181, 180, 177, 0.1);
         background-position-x: 95%;
-        background-position-y: 50%;
-        background-color:      rgba(181, 180, 177, 0.1);
       }
     }
   }
@@ -173,21 +170,20 @@
     }
     .swiper {
       max-width: 1440px;
-      padding:   0 80px 0;
+      padding:   0 80px;
       margin:    0 auto;
       overflow:  visible;
-    }
-    .img-room {
-      height:        45vw;
-      width:         100%;
-      object-fit:    cover;
-      margin-bottom: 24px;
-      border-radius: 16px;
     }
     .swiper-slide {
       max-width: 1130px;
       width:     90%;
-
+      .img-room {
+        height:        45vw;
+        width:         100%;
+        object-fit:    cover;
+        margin-bottom: 24px;
+        border-radius: 16px;
+      }
       .link {
         width:   60%;
         opacity: 0;
@@ -258,20 +254,21 @@
     }
     h2 {
       max-width:     50%;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     .swiper {
       padding-bottom: 60px;
     }
     .swiper-slide {
       max-width:     783px;
-      max-height:    521px;
+      height:    521px;
       border-radius: 16px;
       overflow:      hidden;
       display:       flex;
       align-items:   center;
       img {
         width:      100%;
+        height: 100%;
         object-fit: cover;
       }
       div {
@@ -489,8 +486,8 @@
 
     .restaurants-and-bars {
       .swiper-slide {
-        max-height: 382px;
-        max-width:  535px;
+        height: 382px;
+        width:  535px;
         div {
           width:      97%;
           left:       15px;
@@ -529,9 +526,9 @@
 }
 
 @media(max-width: 768px) {
-
   .home {
     .welcome {
+      padding: 30px 0 50px;
       .wrapper {
         flex-direction: column;
       }
@@ -540,7 +537,7 @@
       }
       .facilities {
         width: 100%;
-        .info {
+        .content {
           padding: 20px;
         }
       }
@@ -594,18 +591,22 @@
       h2 {
         font-size: 24px;
       }
+      .swiper-slide{
+        width: 100%;
+      }
     }
 
     .events {
       min-height: auto;
-      margin:     30px 0 43px;
+      padding: 40px 0;
       .back {
         display: none;
         height:  100%;
       }
-      .content {
+      .block-content {
         max-width:      100%;
-        padding:        39px 20px 45px;
+        //padding:        39px 20px 45px;
+        padding: 0;
         display:        flex;
         flex-direction: column;
         align-items:    center;

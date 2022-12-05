@@ -75,6 +75,14 @@ li {
   justify-content:  center;
   align-items:      center;
   cursor:           pointer;
+  text-transform:   uppercase;
+}
+
+.middle-btn-scarlet {
+  max-width:     250px;
+  padding:       16px 80px;
+  border-radius: 48px;
+  color:         #fff;
 }
 
 .btn-scarlet:hover {
@@ -94,12 +102,25 @@ li {
   }
 }
 
-input[type='date']::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator, select {
   -webkit-appearance:    none;
   -moz-appearance:       none;
   background-image:      url('../img/icons/icon-select-open.svg');
   background-repeat:     no-repeat;
-  background-position-x: 95%;
+  background-position-x: 100%;
   background-position-y: 50%;
   height:                6px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: 1px solid transparent;
+  transition: .3s linear;
+  &:hover, &:hover {
+    border: 1px solid black;
+  }
+}
+
+@media(max-width: 1024px) {
+  //max-width: ;
 }

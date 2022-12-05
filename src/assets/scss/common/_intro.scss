@@ -1,0 +1,52 @@
+.intro {
+  min-height: 100vh;
+  .content {
+    max-width:       1090px;
+    padding-top:     50vh;
+    display:         flex;
+    justify-content: space-between;
+    margin:          0 auto;
+  }
+  .left {
+    width: 50%;
+    a {
+      margin-bottom: 45px;
+      display:       flex;
+      align-items:   center;
+    }
+    span {
+      font-size:      14px;
+      font-weight:    350;
+      text-transform: uppercase;
+      transition:     .3s linear;
+      &:hover {
+        color: #CA4326;
+      }
+    }
+    img {
+      height:       13px;
+      margin-right: 10px;
+      filter:       invert(1);
+      transform:    rotate(180deg);
+    }
+    h1 {
+      font-size: 64px;
+    }
+  }
+  .right {
+    width:        40%;
+    padding-left: 30px;
+    ul {
+      display:       flex;
+      flex-wrap:     wrap;
+      margin-bottom: 35px;
+    }
+    h3 {
+      font-weight: 400;
+    }
+    li {
+      width:         50%;
+      margin-bottom: 5px;
+    }
+  }
+}
