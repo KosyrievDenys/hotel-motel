@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  const headerScroll = document.getElementsByTagName('header')[0];
+  const header = document.getElementsByTagName('header')[0];
   window.addEventListener("scroll", function () {
     const windowScrollTop = window.pageYOffset;
     if (windowScrollTop > 0) {
-      headerScroll.classList.add('header-scroll');
+      header.classList.add('header-scroll');
     } else {
-      headerScroll.classList.remove('header-scroll');
+      header.classList.remove('header-scroll');
     }
   })
 
@@ -14,6 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 'auto',
     spaceBetween: 22,
     grabCursor: true,
+  })
+
+  new Swiper('.swiper-big', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 15,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      grabCursor: true,
+    },
+    breakpoints: {
+      1024: {
+        spaceBetween: 115,
+      },
+    },
   })
 
 });

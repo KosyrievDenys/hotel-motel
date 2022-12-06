@@ -7,15 +7,17 @@
   .content {
     min-height:      460px;
     display:         flex;
-    justify-content: space-between;
+    justify-content: start;
     padding-bottom:  80px;
   }
   .logo {
-    height:       53px;
+    max-width:    207px;
+    max-height:   53px;
+    width:        33%;
     margin-right: 100px;
   }
   ul {
-    padding: 0 20px 40px;
+    padding: 0 10px 40px;
   }
   li {
     margin-bottom: 10px;
@@ -50,8 +52,14 @@
   .footer {
     .content {
       flex-wrap: wrap;
-      ul:last-of-type {
-        width: 30%;
+    }
+    .logo {
+      width:      100%;
+      max-width:  100%;
+      text-align: center;
+      margin:     0 0 55px 0;
+      img {
+        margin: 0 auto;
       }
     }
   }
@@ -62,8 +70,8 @@
     * {
       font-size: 14px;
     }
-    .logo {
-      margin: 0 auto 55px;
+    ul {
+      width: 50%;
     }
     .copywriting {
       width: 100%;
@@ -73,21 +81,12 @@
 
 @media(max-width: 567px) {
   .footer {
-    .content {
-      ul:nth-of-type(2) {
-        display:   flex;
-        flex-wrap: wrap;
-        li {
-          width: 50%;
-          &:nth-of-type(1) {
-            width: 100%;
-          }
-        }
-      }
-    }
     .copywriting {
       flex-direction: column;
-      p:not(p:last-of-type) {
+      p {
+        margin-bottom: 10px;
+      }
+      a:not(a:last-of-type) {
         margin-bottom: 10px;
       }
     }

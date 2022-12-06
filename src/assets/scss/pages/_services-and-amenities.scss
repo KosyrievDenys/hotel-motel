@@ -1,12 +1,9 @@
-.services-and-amenities{
-  .section-about {
+.services-and-amenities {
+  .about {
     padding: 120px 0;
     * {
       font-weight: 350;
       line-height: 1.6;
-    }
-    .container {
-      padding: 0 155px;
     }
     .wrapper {
       display:         flex;
@@ -28,23 +25,18 @@
       font-weight: 400;
     }
   }
-
-  .first-section-about {
+  .first-about {
     padding-top: 80px;
   }
-
-  .last-section-about {
+  .last-about {
     padding-bottom: 60px;
   }
 }
 
 @media(max-width: 1024px) {
-  .services-and-amenities{
-    .section-about {
+  .services-and-amenities {
+    .about {
       padding: 56px 0;
-      .container {
-        padding: 0 20px;
-      }
       .wrapper {
         flex-direction: column;
       }
@@ -60,18 +52,18 @@
         margin-bottom: 24px;
       }
     }
-    .first-section-about {
+    .first-about {
       padding-top: 40px;
     }
-    .last-section-about {
+    .last-about {
       padding-bottom: 28px;
     }
   }
 }
 
 @media(max-width: 768px) {
-  .services-and-amenities{
-    .section-about {
+  .services-and-amenities {
+    .about {
       h2 {
         width: 100%;
       }

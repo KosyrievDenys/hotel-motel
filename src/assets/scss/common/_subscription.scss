@@ -11,7 +11,7 @@
     object-fit:  cover;
   }
   .content {
-    max-width:     921px;
+    width:         921px;
     background:    #37393B;
     border-radius: 24px;
     padding:       64px 80px;
@@ -30,33 +30,42 @@
     margin-bottom: 40px;
   }
   form {
-    display:  flex;
-    position: relative;
-  }
-  input {
-    margin-right:   24px;
-    background:     transparent;
-    border:         0;
-    border-bottom:  1px solid rgba(255, 255, 255, .2);
-    padding-bottom: 8px;
-    transition:     .3s linear;
-  }
-  label:hover input {
-    border-bottom: 1px solid rgba(green, 1);
-  }
-  button {
-    display:        flex;
-    align-items:    center;
-    position:       absolute;
-    top:            -12%;
-    right:          0;
-    text-transform: uppercase;
-    background:     transparent;
-    border:         0;
-    cursor:         pointer;
-    &:hover {
-      span {
-        color: #CA4326;
+    display:         flex;
+    justify-content: space-between;
+    flex-wrap:       wrap;
+    label {
+      width: 30%;
+    }
+    input {
+      width:          100%;
+      background:     transparent;
+      border:         0;
+      border-bottom:  1px solid rgba(255, 255, 255, .2);
+      padding-bottom: 8px;
+      transition:     .3s linear;
+      &:hover {
+        border-bottom: 1px solid rgba(#CA4326, .2);
+      }
+    }
+    div {
+      width:   33%;
+      display: flex;
+      label {
+        width: 85%;
+      }
+    }
+    button {
+      display:        flex;
+      align-items:    center;
+
+      text-transform: uppercase;
+      background:     transparent;
+      border:         0;
+      cursor:         pointer;
+      border-bottom:  1px solid rgba(255, 255, 255, .2);
+      &:hover {
+        opacity:       .7;
+        border-bottom: 1px solid rgba(#CA4326, .2);
       }
     }
   }
@@ -70,14 +79,29 @@
 @media(max-width: 1024px) {
   .subscription {
     .content {
-      padding: 51px 23px;
+      max-width: 750px;
+      padding:   51px 23px;
+    }
+    form {
+      label {
+        width:          100%;
+        padding-bottom: 20px;
+      }
+      div {
+        width:           100%;
+        justify-content: space-between;
+        label {
+          width:          91%;
+          padding-bottom: 0;
+        }
+      }
     }
   }
 }
 
 @media(max-width: 768px) {
   .subscription {
-    padding-top: 200px;
+    padding-top: 100px;
     .back {
       height:     530px;
       width:      100%;
@@ -87,7 +111,7 @@
       min-width: 280px;
       width:     90%;
       padding:   51px 33px;
-      top:       100px;
+      top:       50px;
     }
     h2 {
       font-size: 40px;
@@ -98,13 +122,6 @@
     }
     label, input {
       width: 100%;
-    }
-    button {
-      top: 77%;
-    }
-    label:not(label:last-of-type) {
-      display:       inline-block;
-      margin-bottom: 20px;
     }
   }
 }
