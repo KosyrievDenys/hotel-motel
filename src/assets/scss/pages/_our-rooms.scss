@@ -1,0 +1,187 @@
+.our-rooms {
+  .rooms {
+    padding: 89px 0 0;
+    .filter-rooms {
+      margin-bottom: 40px;
+    }
+    .selected {
+      .filter-title {
+        font-weight:  350;
+        margin-right: 20px;
+        font-size:    20px;
+      }
+      .filter {
+        min-width:        213px;
+        display:          flex;
+        flex-direction:   column;
+        align-items:      center;
+        border:           1px solid black;
+        border-radius:    30px;
+        padding:          20px 20px 20px;
+        position:         absolute;
+        top:              -16px;
+        left:             120px;
+        z-index:          10;
+        background-color: white;
+        &-active {
+          img {
+            transform: rotate(180deg);
+          }
+          ul {
+            display: block !important;
+          }
+        }
+        &-window {
+          display:        flex;
+          align-items:    center;
+          text-transform: uppercase;
+        }
+        span {
+          margin-right: 10px;
+          font-size:    14px;
+          font-weight:  350;
+        }
+        img {
+          height:     10px;
+          transition: .3s linear;
+        }
+        ul {
+          display:     none;
+          padding-top: 20px;
+        }
+        li {
+          text-align:     center;
+          text-transform: uppercase;
+          cursor:         pointer;
+          transition:     .2s linear;
+          font-weight:    350;
+          &:hover {
+            color: #CA4326;
+          }
+          &:not(li:last-of-type) {
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+    .filter-items {
+      display:         flex;
+      justify-content: space-between;
+      flex-wrap:       wrap;
+    }
+    a {
+      width:          40%;
+      cursor:         pointer;
+      padding-bottom: 80px;
+      &.active {
+        display: none;
+      }
+      .image {
+        max-height:    384px;
+        height:        34vw;
+        overflow:      hidden;
+        border-radius: 24px;
+        margin-bottom: 24px;
+        position:      relative;
+        top:           0;
+        left:          0;
+        display:       flex;
+        align-items:   center;
+        .room {
+          height:     100%;
+          width:      100%;
+          object-fit: cover;
+          transition: .2s linear;
+        }
+      }
+      &:nth-of-type(4n),
+      &:nth-of-type(4n-3) {
+        width: 58%;
+        .image {
+          max-height: 493px;
+          height:     50vw;
+        }
+      }
+      p {
+        color:      #37393B;
+        transition: .1s linear;
+      }
+      &:hover {
+        .room {
+          scale: 1.1;
+        }
+        p {
+          color: black;
+        }
+      }
+      span {
+        display:        block;
+        position:       absolute;
+        top:            10px;
+        left:           10px;
+        z-index:        1;
+        padding:        5px 15px;
+        font-size:      10px;
+        text-transform: uppercase;
+        color:          #fff;
+        border-radius:  24px;
+      }
+      .accessible-rooms-title {
+        background: #99604C;
+      }
+      .suites-title {
+        background: #37393B;
+      }
+      .apartments-title {
+        background: #687D8A;
+      }
+      .room {
+        height:     100%;
+        width:      100%;
+        object-fit: cover;
+      }
+      .room-title {
+        display:       flex;
+        align-items:   center;
+        margin-bottom: 24px;
+      }
+      h3 {
+        margin-right: 10px;
+      }
+      .img-right-arrow {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .our-rooms {
+    .rooms {
+      padding-top: 40px;
+      .filter-rooms {
+        margin-bottom: 90px;
+      }
+      .selected {
+        .filter {
+          top:  40px;
+          left: 20px;
+        }
+      }
+      a {
+        width:          100%;
+        padding-bottom: 40px;
+        .image {
+          height: 60vw;
+        }
+        &:nth-of-type(4n),
+        &:nth-of-type(4n-3) {
+          width: 100%;
+          .image {
+            height: 60vw;
+          }
+        }
+      }
+    }
+  }
+}

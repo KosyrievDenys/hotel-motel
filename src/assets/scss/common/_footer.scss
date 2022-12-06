@@ -7,7 +7,7 @@
   .content {
     min-height:      460px;
     display:         flex;
-    justify-content: start;
+    justify-content: space-between;
     padding-bottom:  80px;
   }
   .logo {
@@ -40,7 +40,7 @@
       transform: rotate(-40deg);
     }
   }
-  .copywriting {
+  .copyright {
     width:           60%;
     display:         flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@
     ul {
       width: 50%;
     }
-    .copywriting {
+    .copyright {
       width: 100%;
     }
   }
@@ -81,7 +81,7 @@
 
 @media(max-width: 567px) {
   .footer {
-    .copywriting {
+    .copyright {
       flex-direction: column;
       p {
         margin-bottom: 10px;
