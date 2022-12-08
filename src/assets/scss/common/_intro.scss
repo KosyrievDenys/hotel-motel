@@ -1,12 +1,12 @@
 .intro {
-  min-height:     100vh;
-  height:         100%;
-  padding-bottom: 40px;
+  min-height: 100%;
+  height:     100%;
+
   .container {
     max-width: 1181px;
   }
   .content {
-    padding-top:     50vh;
+    padding:         260px 0 90px;
     display:         flex;
     justify-content: space-between;
     margin:          0 auto;
@@ -17,21 +17,25 @@
       margin-bottom: 45px;
       display:       flex;
       align-items:   center;
+      &:hover {
+        img {
+          padding-left:  10px;
+          padding-right: 10px;
+        }
+      }
+    }
+    img {
+      height:       13px;
+      filter:       invert(1);
+      transform:    rotate(180deg);
+      padding-left: 20px;
+      transition:   .2s linear;
     }
     span {
       font-size:      14px;
       font-weight:    350;
       text-transform: uppercase;
       transition:     .3s linear;
-      &:hover {
-        color: #CA4326;
-      }
-    }
-    img {
-      height:       13px;
-      margin-right: 10px;
-      filter:       invert(1);
-      transform:    rotate(180deg);
     }
     h1 {
       font-size:   64px;
@@ -74,7 +78,7 @@
     min-height:     100%;
     padding-bottom: 0;
     .content {
-      padding-top:     17vh;
+      padding:         140px 0 40px;
       flex-wrap:       wrap;
       justify-content: start;
     }
@@ -93,6 +97,7 @@
     .right {
       max-width: 500px;
       width:     100%;
+      padding-left: 0;
       button {
         display: none !important;
       }
