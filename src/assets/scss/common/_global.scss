@@ -4,7 +4,7 @@
   margin:      0;
   padding:     0;
   font-family: 'Gotham', sans-serif;
-  color:       #000;
+  color:       #37393B;
   font-weight: 300;
   font-size:   16px;
 }
@@ -72,17 +72,23 @@ li {
   background-color: #CA4326;
   border:           0;
   text-align:       center;
-  justify-content:  center;
-  align-items:      center;
   cursor:           pointer;
   text-transform:   uppercase;
-  display:          block;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
   &-big {
-    max-width:     250px;
-    width:         100%;
+    min-width:     208px;
     padding:       16px 0;
     border-radius: 48px;
     color:         #fff;
+  }
+  span {
+    margin-right: 10px;
+    color:        #fff;
+  }
+  img {
+    rotate: -45deg;
   }
   &:hover {
     background-color: black;
@@ -118,8 +124,73 @@ input[type='date']::-webkit-calendar-picker-indicator, select {
   }
 }
 
+.btn-filter {
+  display:  flex;
+  position: relative;
+}
+
+.filter {
+  width:            208px;
+  display:          flex;
+  flex-direction:   column;
+  align-items:      center;
+  border:           1px solid black;
+  border-radius:    30px;
+  padding:          16px 20px;
+  background-color: white;
+  position:         absolute;
+  top:              0;
+  left:             0;
+  z-index:          10;
+  &-active {
+    img {
+      transform: rotate(180deg);
+    }
+    ul {
+      display: block !important;
+    }
+  }
+  &-window {
+    display:        flex;
+    align-items:    center;
+    text-transform: uppercase;
+  }
+  span {
+    margin-right: 10px;
+    font-size:    14px;
+    font-weight:  350;
+  }
+  img {
+    height:     10px;
+    transition: .3s linear;
+  }
+  ul {
+    display:     none;
+    padding-top: 20px;
+  }
+  li {
+    text-align:     center;
+    text-transform: uppercase;
+    cursor:         pointer;
+    transition:     .2s linear;
+    font-weight:    350;
+    &:hover {
+      color: #CA4326;
+    }
+    &:not(li:last-of-type) {
+      padding-bottom: 15px;
+    }
+  }
+}
+
 @media(max-width: 1024px) {
   .btn-scarlet-big {
     max-width: 335px;
+    width:     100%;
+  }
+  .filter {
+    max-width: 335px;
+    width:     100%;
   }
 }
+
