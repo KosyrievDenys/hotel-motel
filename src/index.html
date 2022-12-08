@@ -22,14 +22,14 @@
     <div class='upper-block'>
       <img class='img-search' src='./assets/img/icons/search.svg' alt=''>
       <a href='./index.html' class='logo'><img src='./assets/img/logo.png' alt=''></a>
-      <a href='#' class='header-btn-book btn-scarlet'>Book</a>
+      <button type='button' class='btn-scarlet'>Book</button>
     </div>
     <div class='nav-block'>
       <ul>
         <li><a href='#'>Home</a></li>
         <li><a href='./our-rooms.html'>Rooms</a></li>
         <li><a href='./services-and-amenities.html'>Venues & Events</a></li>
-        <li><a href='#'>Eat & drink</a></li>
+        <li><a href='./dining.html'>Eat & drink</a></li>
         <li><a href='#'>Things to do</a></li>
         <li><a href='#'>Offers</a></li>
       </ul>
@@ -47,7 +47,7 @@
         <form>
           <label>
             <span>When</span>
-            <input type='date' />
+            <input type='date' required />
           </label>
           <label>
             <span>Guests</span>
@@ -55,7 +55,7 @@
               <option>Select Guests</option>
             </select>
           </label>
-          <button class='intro-btn btn-scarlet'>
+          <button type='submit' class='intro-btn btn-scarlet'>
             <span class='intro-btn-p'>Check availability</span>
             <img class='img-right-arrow' src='assets/img/icons/right-arrow-white.svg' alt=''>
           </button>
@@ -140,7 +140,7 @@
         <div class='swiper-slide'>
           <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
           <div class='link'>
-            <a>
+            <a href='#'>
               <h3>Double Double Room</h3>
               <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
             </a>
@@ -152,7 +152,7 @@
         <div class='swiper-slide'>
           <img class='img-room' src='./assets/img/home-events.png' alt=''>
           <div class='link'>
-            <a>
+            <a href='#'>
               <h3>Double Double Room</h3>
               <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
             </a>
@@ -164,7 +164,7 @@
         <div class='swiper-slide'>
           <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
           <div class='link'>
-            <a>
+            <a href='#'>
               <h3>Double Double Room</h3>
               <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
             </a>
@@ -176,7 +176,7 @@
         <div class='swiper-slide'>
           <img class='img-room' src='./assets/img/accessible-rooms-1.jpg' alt=''>
           <div class='link'>
-            <a>
+            <a href='#'>
               <h3>Double Double Room</h3>
               <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
             </a>
@@ -284,7 +284,9 @@
               <h3>Come Alive. Travel Longer</h3>
               <p>What makes you come alive? Here’s your chance to find out, with up to 15% off long stays across
                 Australia with the Independent Collection by EVENT.</p>
-              <a class='btn-offers'><span>FROM $125</span><img src='./assets/img/icons/right-arrow-white.svg' alt=''>
+              <a class='btn-offers'>
+                <span>FROM $125</span>
+                <img src='./assets/img/icons/right-arrow-white.svg' alt=''>
               </a>
             </div>
           </div>
@@ -381,16 +383,16 @@
       <p>Sign up for the HotelMOTEL Newsletter and never miss an offer</p>
       <form>
         <label>
-          <input type='text' placeholder='Full Name' />
+          <input type='text' placeholder='Full Name' required />
         </label>
         <label>
-          <input type='email' placeholder='Email Adress' />
+          <input type='email' placeholder='Email Adress' required />
         </label>
         <div>
           <label>
-            <input type='text' placeholder='Postcode' />
+            <input type='text' placeholder='Postcode' required />
           </label>
-          <button>
+          <button type='submit'>
             <span>Join</span>
             <img class='img-right-arrow' src='./assets/img/icons/right-arrow-white.svg' alt=''>
           </button>
@@ -462,7 +464,7 @@
         <li><a href='#'>YouTube</a></li>
       </ul>
     </div>
-    <div class='copywriting'>
+    <div class='copyright'>
       <p>© HotelMOTEL</p>
       <a href='#'>Privacy Policy</a>
       <a href='#'>Terms of Use</a>
