@@ -1,0 +1,72 @@
+.dining {
+  .fun {
+    .right {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .dining-info {
+    .content {
+      display:         flex;
+      flex-wrap:       wrap;
+      justify-content: space-between;
+    }
+    a {
+      width:          49%;
+      overflow:       hidden;
+      border-radius:  24px;
+      padding-bottom: 20px;
+      &:hover {
+        .item-img {
+          img {
+            scale: 1.1;
+          }
+        }
+        .item-title {
+          opacity: .7;
+        }
+      }
+      .item-img {
+        max-height:    445px;
+        height:        31vw;
+        width:         100%;
+        margin-bottom: 20px;
+        border-radius: 24px;
+        overflow:      hidden;
+        img {
+          width:      100%;
+          object-fit: cover;
+          transition: .2s linear;
+        }
+      }
+      .item-title {
+        display:       flex;
+        align-items:   center;
+        margin-bottom: 20px;
+        transition:    .3s linear;
+        h3 {
+          font-weight:  350;
+          margin-right: 10px;
+        }
+        img {
+          border-radius: 24px;
+          filter:        invert(1);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .dining {
+    .dining-info {
+      a {
+        width: 100%;
+        .item-img {
+          height: 55vw;
+        }
+      }
+    }
+  }
+}

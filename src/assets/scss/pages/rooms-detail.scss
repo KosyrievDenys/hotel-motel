@@ -1,0 +1,17 @@
+.rooms-detail {
+  .intro {
+    .right {
+      ul {
+        width:     100%;
+        display:   flex;
+        flex-wrap: wrap;
+      }
+      li{
+        width: 50%;
+        &:first-of-type{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
