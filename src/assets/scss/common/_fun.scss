@@ -3,17 +3,18 @@
     max-width: 1130px;
   }
   .content {
-    max-width: 1130px;
-    padding:   117px 0;
-    display:   flex;
+    max-width:       1130px;
+    padding:         117px 0;
+    display:         flex;
+    justify-content: space-between;
   }
   .left, .right {
-    width: 50%;
+    width: 48%;
   }
   .right {
     p {
       line-height:   1.6;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       font-weight:   350;
     }
     .filter {
@@ -40,7 +41,7 @@
     }
     .right {
       p {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -50,7 +51,7 @@
   .dining-detail {
     .fun {
       .content {
-        padding: 40px 0 80px;
+        padding: 40px 0;
       }
       .right {
         .filter {
@@ -58,6 +59,16 @@
           right: auto;
           top:   60px;
         }
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .dining-detail {
+    .fun {
+      .content {
+        padding: 20px 0;
       }
     }
   }

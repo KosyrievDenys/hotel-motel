@@ -13,10 +13,10 @@
       justify-content: space-between;
     }
     a {
-      width:          49%;
-      overflow:       hidden;
-      border-radius:  24px;
-      padding-bottom: 20px;
+      width:         49%;
+      overflow:      hidden;
+      border-radius: 24px;
+      margin-bottom: 20px;
       &:hover {
         .item-img {
           img {
@@ -35,6 +35,7 @@
         border-radius: 24px;
         overflow:      hidden;
         img {
+          height:     100%;
           width:      100%;
           object-fit: cover;
           transition: .2s linear;

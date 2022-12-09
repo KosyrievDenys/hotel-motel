@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+  //Changing the 'header' when scrolling
   const header = document.getElementsByTagName('header')[0];
   window.addEventListener("scroll", function () {
     const windowScrollTop = window.pageYOffset;
@@ -9,22 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
       header.classList.remove('header-scroll');
     }
   })
-
+  //Slider section 'socials'
   new Swiper('.swiper-socials', {
     slidesPerView: 'auto',
     spaceBetween: 22,
     grabCursor: true,
   })
-
-  let filter = document.getElementsByClassName('filter');
+  //Opening the selector ''selected
+  let filter = document.getElementsByClassName('selected');
   for (let i = 0; i < filter.length; i++) {
     filter[i].addEventListener('click', function () {
-      filter[i].classList.toggle('filter-active');
+      filter[i].classList.toggle('selected-active');
     })
   }
-
+  //Activation of the selected selection from the selector 'selected'
   let linkItem = document.getElementsByClassName('link-item');
-  let filterSearch = document.getElementsByClassName('filter-search');
+  let filterSearch = document.getElementsByClassName('selected-search');
   for (let k = 0; k < filterSearch.length; k++) {
     for (let i = 0; i < linkItem.length; i++) {
       linkItem[i].addEventListener('click', function () {
@@ -32,8 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     }
   }
-
-
+  //Slider section 'swiper-big'
   new Swiper('.swiper-big', {
     slidesPerView: 'auto',
     centeredSlides: true,

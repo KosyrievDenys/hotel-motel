@@ -1,0 +1,22 @@
+.dining-detail {
+  .intro {
+    .right {
+      .links {
+        align-items: start;
+      }
+      ul:last-of-type {
+        li:nth-child(2):hover {
+          opacity: .7;
+        }
+        li:last-of-type {
+          a {
+            border-bottom: 1px solid rgba(#37393B, .7);
+            &:hover {
+              border-bottom: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

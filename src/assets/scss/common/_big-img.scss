@@ -8,3 +8,11 @@
     margin:        0 auto;
   }
 }
+
+@media(max-width: 567px) {
+  .big-img {
+    img {
+      border-radius: 16px;
+    }
+  }
+}
