@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+  //Slider section 'rooms'
   new Swiper(".swiper-rooms", {
     slidesPerView: 'auto',
     centeredSlides: true,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   })
-
+  //Slider section 'restaurants and bars'
   new Swiper(".swiper-restaurants", {
     loop: true,
     slidesPerView: 'auto',
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
       draggable: true,
     }
   })
-
+  //Slider section 'offers'
   new Swiper('.swiper-offers', {
     navigation: {
       nextEl: '.swiper-button-next',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       type: 'fraction',
     }
   })
-
+  //Slider section 'comments'
   new Swiper('.swiper-comments', {
     scrollbar: {
       el: '.swiper-scrollbar',

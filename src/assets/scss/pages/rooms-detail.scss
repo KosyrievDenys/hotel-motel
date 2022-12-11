@@ -6,9 +6,21 @@
         display:   flex;
         flex-wrap: wrap;
       }
-      li{
+      li {
         width: 50%;
-        &:first-of-type{
+        &:first-of-type {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .rooms-detail {
+    .intro {
+      .right {
+        li {
           width: 100%;
         }
       }

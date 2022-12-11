@@ -76,24 +76,10 @@
   }
 }
 
-//@media(max-width: 768px) {
-//  .big-swiper {
-//    .swiper-button-prev {
-//      left:             85px;
-//    }
-//    .swiper-button-next {
-//      right:            85px;
-//    }
-//  }
-//}
-
-//@media(max-width: 567px) {
-//  .big-swiper {
-//    .swiper-button-prev {
-//      left:             0;
-//    }
-//    .swiper-button-next {
-//      right:            0;
-//    }
-//  }
-//}
+@media(max-width: 567px) {
+  .big-swiper {
+    .swiper-slide {
+      border-radius: 16px;
+    }
+  }
+}

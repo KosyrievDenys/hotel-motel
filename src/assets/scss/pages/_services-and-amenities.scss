@@ -1,6 +1,6 @@
 .services-and-amenities {
   .about {
-    padding: 120px 0;
+    padding: 100px 0;
     * {
       font-weight: 350;
       line-height: 1.6;
@@ -15,11 +15,11 @@
     .right {
       width: 50%;
     }
-    li {
+    p {
       margin-bottom: 16px;
-    }
-    .main-about {
-      margin-bottom: 40px;
+      &:first-of-type {
+        margin-bottom: 40px;
+      }
     }
     h3 {
       font-weight: 400;
@@ -29,14 +29,14 @@
     padding-top: 80px;
   }
   .last-about {
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
 @media(max-width: 1024px) {
   .services-and-amenities {
     .about {
-      padding: 56px 0;
+      padding: 35px 0;
       .wrapper {
         flex-direction: column;
       }
@@ -57,15 +57,23 @@
     .first-about {
       padding-top: 40px;
     }
-    .last-about {
-      padding-bottom: 28px;
-    }
   }
 }
 
 @media(max-width: 768px) {
   .services-and-amenities {
     .about {
+      .left {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  .services-and-amenities {
+    .about {
+      padding: 20px 0;
       .left {
         width: 100%;
       }

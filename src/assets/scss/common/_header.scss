@@ -93,6 +93,9 @@
       ul {
         a {
           color: #fff;
+          &:hover, &.header-active-link {
+            border-bottom: 2px solid white;
+          }
         }
       }
       .upper-block .img-search {
@@ -161,8 +164,7 @@
       display: none;
     }
     ul {
-      height:          56px;
-      justify-content: start;
+      height: 56px;
       li {
         white-space: nowrap;
         border:      0;
